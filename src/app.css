@@ -1,0 +1,21 @@
+:root {
+  --bg-card: rgba(255, 255, 255, 0.9);
+  --bg-panel: #ffffff;
+  --text-primary: #111;
+  --shadow: rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="dark"] {
+  --bg-card: rgba(24, 24, 27, 0.85);
+  --bg-panel: #1e1e24;
+  --text-primary: #f9fafb;
+  --shadow: rgba(0, 0, 0, 0.5);
+}
+
+html, body {
+  margin: 0;
+}
+
+.leaflet-container {
+  background: #1e1e1e;
+}

@@ -1,0 +1,11 @@
+services:
+  flightjs-rtl:
+    build: .
+    image: flightjs-rtl:latest
+    container_name: flightjs-rtl
+    # devices:
+    #   - /dev/bus/usb:/dev/bus/usb
+    ports:
+      - "30003:30003"
+      - "8080:8080"
+      - "3000:80"

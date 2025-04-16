@@ -1,0 +1,36 @@
+# EditorConfig helps maintain consistent coding styles between different editors and IDEs.
+# For more information, see: https://editorconfig.org
+
+# Root of the configuration
+root = true
+
+# 1. Global settings
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# 2. TypeScript specific settings
+[*.ts]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+# 3. Svelte specific settings
+[*.svelte]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+# 4. JavaScript specific settings (if you have JS files too)
+[*.js]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+# 5. JSON settings
+[*.json]
+indent_style = space
+indent_size = 2
+quote_type = double
