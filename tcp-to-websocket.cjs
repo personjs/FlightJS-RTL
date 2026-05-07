@@ -9,7 +9,7 @@ const wss = new WebSocket.Server({
 });
 
 // Define TCP server details
-const HOST = '11.32.32.10'; // Your TCP server host
+const HOST = 'localhost'; // Your TCP server host
 const PORT = 30003; // Your TCP server port
 
 function parseData(data) {
