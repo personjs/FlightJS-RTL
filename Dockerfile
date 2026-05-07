@@ -1,13 +1,14 @@
-FROM node:22 as builder
+FROM node:trixie AS builder
 
 # Build
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN npm install -g pnpm
+RUN pnpm install
 COPY . .
-RUN npm run build
+RUN pnpm run build
 
-FROM node:22
+FROM node:trixie
 
 # Install required dependencies
 RUN apt-get update && \

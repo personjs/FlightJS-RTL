@@ -9,7 +9,7 @@ const wss = new WebSocket.Server({
 });
 
 // Define TCP server details
-const HOST = 'localhost'; // Your TCP server host
+const HOST = '11.32.32.10'; // Your TCP server host
 const PORT = 30003; // Your TCP server port
 
 function parseData(data) {
@@ -50,7 +50,8 @@ wss.on('connection', (ws) => {
   tcpClient.on('data', (data) => {
     const planeData = parseData(data.toString());
     if (planeData.latitude && planeData.longitude) {
-      console.log(planeData);
+      console.log(data.toString());
+      console.log(JSON.stringify(planeData));
       ws.send(JSON.stringify(planeData)); // Send data to WebSocket client
     }
   });

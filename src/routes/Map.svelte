@@ -64,7 +64,7 @@
   }
 
   onMount(() => {
-    initPlaneSocket("ws://11.32.32.198/ws");
+    initPlaneSocket("ws://localhost:8080/ws");
 
     map = L.map("map", { zoomControl: false }).setView([51.505, -0.09], 13);
 
