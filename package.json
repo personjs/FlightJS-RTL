@@ -16,13 +16,13 @@
     "svelte": "^5.55.7",
     "svelte-check": "^4.4.8",
     "typescript": "~5.7.3",
-    "vite": "^6.4.2"
+    "vite": "^6.4.6"
   },
   "dependencies": {
     "flightjs": "file:",
     "flightjs-rtl": "file:",
     "leaflet": "^1.9.4",
     "net": "^1.0.2",
-    "ws": "^8.20.1"
+    "ws": "^8.23.0"
   }
 }
